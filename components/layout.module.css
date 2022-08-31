@@ -1,0 +1,18 @@
+.d_layout{
+    width: 100vw;
+    height: 100vh;
+    box-sizing: border-box;
+    overflow: hidden auto;
+}
+.d_layout_header{
+    background: url('https://s-bj-4351-lyra.oss.dogecdn.com/wallhaven-6o3qx7.png') center center / cover;
+    position: relative;
+}
+.d_layout_header::before{
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(255,255,255,0);
+    backdrop-filter: blur(10px);
+    z-index: 0;
+}
