@@ -28,56 +28,26 @@ export default function Layout ({ children, home }) {
                 <meta name='twitter:card' content='summary_large_image' />
             </Head>
             <header className={ 'flex flex-col items-center py-10 ' + styles.d_layout_header }>
-                {
-                    home ? (
-                        <>
-                            <Image
-                                priority
-                                src='/images/avatar.jpeg'
-                                className='rounded-full'
-                                height={ 144 }
-                                width={ 144 }
-                                alt={ NAME }
-                            />
-                            <div className='flex flex-col items-center relative z-10'>
-                                <h1 className='text-5xl font-extrabold tracking-tighter mt-10 text-white' style={{fontFamily: 'Leckerli One'}}>
-                                    { NAME }
-                                </h1>
-                            </div>
-                        </>
-                    ) : (
-                        <>
-                            <Link href='/'>
-                                <a>
-                                    <Image
-                                        priority
-                                        src='/images/avatar.jpeg'
-                                        className='rounded-full'
-                                        height={ 108 }
-                                        width={ 108 }
-                                        alt={ NAME }
-                                    />
-                                </a>
-                            </Link>
-                            <h2 className='text-2xl my-4'>
-                                <Link href='/'>
-                                    <a>{ NAME }</a>
-                                </Link>
-                            </h2>
-                        </>
-                        )
-                }
+                <Image
+                    priority
+                    src='/images/logo.jpeg'
+                    className='rounded-full'
+                    height={ 144 }
+                    width={ 144 }
+                    alt={ NAME }
+                />
+                <div className='flex flex-col items-center relative z-10'>
+                    <h1 className='text-5xl font-extrabold tracking-tighter mt-10 text-white' style={{fontFamily: 'Itim'}}>
+                        { NAME }
+                    </h1>
+                </div>
             </header>
+            <article
+                className='flex flex-col items-center py-5 text-sm font-thin tracking-widest text-gray-500 mb-10'
+            >
+                欢迎来到我的博客 请尽情的阅览吧！
+            </article>
             <main>{ children }</main>
-            {
-                !home && (
-                    <div className="mt-12">
-                        <Link href="/">
-                            <a>← 返回首页</a>
-                        </Link>
-                    </div>
-                )
-            }
         </div>
     )
 }

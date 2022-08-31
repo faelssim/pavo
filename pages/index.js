@@ -10,6 +10,7 @@
 import Head from 'next/head'
 import Link from 'next/link'
 import Layout, { SITE_TITLE, NAME } from '../components/layout'
+import Timeline from '../components/timeline'
 import { getSortedPostsData } from '../utils/posts'
 
 
@@ -18,34 +19,12 @@ export default function Home(props) {
     const { postDatas } = props
     return (
         <Layout home>
-            <div>
+            <div className='w-screen flex justify-center'>
                 <Head>
                     <title>{ SITE_TITLE }</title>
-                    <link href="https://fonts.googlefonts.cn/css?family=Leckerli+One" rel="stylesheet"></link>
+                    <link href="https://fonts.googlefonts.cn/css?family=Itim" rel="stylesheet"></link>
                 </Head>
-                <section className="text-xl leading-normal pt-4">
-                    <h2 className="text-2xl my-4 font-bold"></h2>
-                    <ul>
-                        {
-                            postDatas.map(({ id, date, title }) => (
-                                <li
-                                    key={ id }
-                                    className="mb-5"
-                                >
-                                    <Link
-                                        href={ `/posts/${id}` }
-                                    >
-                                        <a>{ title }</a>
-                                    </Link>
-                                    <br />
-                                    <small>
-                                        { date }
-                                    </small>
-                                </li>
-                            ))
-                         }
-                    </ul>
-                </section>
+                <Timeline data={ postDatas }></Timeline>
             </div>
         </Layout>
     )

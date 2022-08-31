@@ -5,7 +5,7 @@
     overflow: hidden auto;
 }
 .d_layout_header{
-    background: url('https://s-bj-4351-lyra.oss.dogecdn.com/wallhaven-6o3qx7.png') center center / cover;
+    background: url('https://s-bj-4351-lyra.oss.dogecdn.com/wallhaven-xllg2z.jpg') center center / cover;
     position: relative;
 }
 .d_layout_header::before{
@@ -13,6 +13,6 @@
     position: absolute;
     inset: 0;
     background: rgba(255,255,255,0);
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(5px);
     z-index: 0;
 }
