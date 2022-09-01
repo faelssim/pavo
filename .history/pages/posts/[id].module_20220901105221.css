@@ -1,0 +1,10 @@
+.d_page{
+  background: 
+    repeating-linear-gradient(
+        45deg, 
+        red 0, 
+        red 10px, 
+        blue 10px, 
+        blue 20px
+    ) left top / 100% 10px no-repeat;  
+}

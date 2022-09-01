@@ -1,0 +1,14 @@
+.d_footer{
+    background: #1E1E1E;
+}
+.i_f_logo{
+    animation: rot 2s line infinite;
+}
+@keyframes rot {
+    form{
+        transform: rotateZ(0);
+    }
+    to{
+        transform: rotateZ(360deg);
+    }
+}
