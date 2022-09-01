@@ -1,0 +1,31 @@
+.d_page{
+  min-height: 100vh;
+  /* mobile viewport bug fix */
+  /* min-height: -webkit-fill-available; */
+  background: 
+    repeating-linear-gradient(
+        45deg, 
+        red 0, 
+        red 10px,
+        #fff 10px,
+        #fff 20px,
+        blue 20px, 
+        blue 30px,
+        #fff 30px,
+        #fff 40px
+    ) left top / 100% 5px no-repeat;
+  background-color: #d5e5f38c;
+  overflow: hidden auto;
+}
+.d_divider{
+  width: 80vw;
+  height: 1px;
+  margin: 0 auto 2rem;
+  background: linear-gradient(
+    to right,
+    transparent,
+    #aaa,
+    #aaa,
+    transparent
+  ) 0 0 / 100%;
+}
