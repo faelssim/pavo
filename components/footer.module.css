@@ -1,5 +1,22 @@
 .d_footer{
-    background: #1E1E1E;
+    width: 100vw;
+    height: 80px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background: 
+    repeating-linear-gradient(
+        45deg, 
+        red 0, 
+        red 10px,
+        #fff 10px,
+        #fff 20px,
+        blue 20px, 
+        blue 30px,
+        #fff 30px,
+        #fff 40px
+    ) left top / 100% 2px no-repeat;
+  background-color: #1E1E1E;
 }
 .i_f_logo{
     animation: rot 10s linear infinite;

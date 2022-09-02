@@ -1,7 +1,7 @@
 /*
  * @Author: wangkun
  * @Date: 2022-08-31 09:21:32
- * @LastEditTime: 2022-09-01 11:04:10
+ * @LastEditTime: 2022-09-02 18:02:33
  * @LastEditors: wangkun
  * @Description: 
  */
@@ -20,7 +20,7 @@ const nextConfig = {
     return config
   },
   images: {
-    domains: ['s-sh-4351-avatar.oss.dogecdn.com']
+    domains: ['s-sh-4351-avatar.oss.dogecdn.com', 's-bj-4351-lyra.oss.dogecdn.com']
   }
 }
 

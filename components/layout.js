@@ -1,7 +1,7 @@
 /*
  * @Author: wangkun
  * @Date: 2022-08-31 09:21:32
- * @LastEditTime: 2022-09-01 11:02:30
+ * @LastEditTime: 2022-09-02 17:23:13
  * @LastEditors: wangkun
  * @Description: 
  */
@@ -29,14 +29,16 @@ export default function Layout ({ children, home }) {
                 <meta name='twitter:card' content='summary_large_image' />
             </Head>
             <header className={ 'flex flex-col items-center py-10 ' + styles.d_layout_header }>
-                <Image
-                    priority
-                    src={ LOGO }
-                    className='rounded-full'
-                    height={ 144 }
-                    width={ 144 }
-                    alt={ NAME }
-                />
+                <Link href="/about">
+                    <Image
+                        priority
+                        src={ LOGO }
+                        className='rounded-full'
+                        height={ 144 }
+                        width={ 144 }
+                        alt={ NAME }
+                    />
+                </Link>
                 <div className='flex flex-col items-center relative z-10'>
                     <h1 className='text-5xl font-extrabold tracking-tighter mt-10 text-white' style={{fontFamily: 'Itim'}}>
                         { NAME }

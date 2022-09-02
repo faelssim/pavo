@@ -1,17 +1,17 @@
 /*
  * @Author: wangkun
  * @Date: 2022-08-31 09:21:32
- * @LastEditTime: 2022-09-01 18:08:42
+ * @LastEditTime: 2022-09-02 17:31:54
  * @LastEditors: wangkun
  * @Description: 
  */
-import Layout from '../../components/layout'
 import Footer from '../../components/footer'
 import Head from 'next/head'
 import ReactMarkdown  from 'react-markdown'
 import { PrismLight as SyntaxHighlighter  } from 'react-syntax-highlighter'
 import { tomorrow, synthwave84, solarizedlight, coldarkCold, dark } from 'react-syntax-highlighter/dist/cjs/styles/prism'
 import gfm from 'remark-gfm' // 扩展链接、表格
+import rehypeRaw from 'rehype-raw'
 import { getPostData, getAllPostIds } from '../../utils/posts'
 import styles from './[id].module.css'
 
@@ -30,7 +30,7 @@ export default function Post (props) {
             <Head>
                 <title>{postData.title}</title>
             </Head>
-            <section className={ 'h-screen flex flex-col ' + styles.d_page }>
+            <section className={ 'grid-bg h-screen flex flex-col ' + styles.d_page }>
                 <section className='flex-grow'>
                     <h1 className='text-xl font-extrabold tracking-tighter text-center pt-10'>
                         {postData.title}
@@ -39,6 +39,7 @@ export default function Post (props) {
                         <ReactMarkdown
                             className="markdown-body"
                             remarkPlugins={ [ gfm ] }
+                            rehypePlugins={ [ rehypeRaw ] }
                             children={ postData.content }
                             components={{
                                 code({node, inline, className = 'highlight', children, ...props}) {

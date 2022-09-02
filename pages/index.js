@@ -1,7 +1,7 @@
 /*
  * @Author: wangkun
  * @Date: 2022-08-31 09:21:32
- * @LastEditTime: 2022-08-31 18:09:38
+ * @LastEditTime: 2022-09-02 16:18:08
  * @LastEditors: wangkun
  * @Description: 
  */
@@ -23,6 +23,8 @@ export default function Home(props) {
                 <Head>
                     <title>{ SITE_TITLE }</title>
                     <link href="https://fonts.googlefonts.cn/css?family=Itim" rel="stylesheet"></link>
+                    <link href="https://fonts.googlefonts.cn/css?family=Space+Mono" rel="stylesheet"></link>
+                    <link href="https://fonts.googlefonts.cn/css?family=Laila" rel="stylesheet"></link>
                 </Head>
                 <Timeline data={ postDatas }></Timeline>
             </div>

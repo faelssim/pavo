@@ -1,3 +1,10 @@
+/*
+ * @Author: wangkun
+ * @Date: 2022-09-01 10:16:14
+ * @LastEditTime: 2022-09-02 16:18:11
+ * @LastEditors: wangkun
+ * @Description: 
+ */
 import Link from 'next/link'
 
 export default function Timeline ({ data }) {
@@ -16,10 +23,16 @@ export default function Timeline ({ data }) {
                         >
                             <a className="cursor-pointer text-blue-900 text-sm">{ title }</a>
                         </Link>
-                        <span className="text-gray-600 font-light text-xs">{ date }</span>
+                        <span className="text-gray-600 font-light text-xs" style={{ fontFamily: 'Space Mono' }}>{ date }</span>
                     </li>
                 ))
             }
+            <li 
+                className='flex justify-center items-center text-xs text-gray-400' 
+                style={{ fontFamily: 'Laila', marginLeft: '10px' }}
+            >
+                Powered by NEXT.JS
+            </li>
         </ul>
     )
 }
