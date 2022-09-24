@@ -5,14 +5,17 @@
     overflow: hidden auto;
 }
 .d_layout_header{
-    background: url('https://s-bj-4351-lyra.oss.dogecdn.com/wallhaven-xllg2z.jpg') center center / cover;
     position: relative;
+    background: linear-gradient(180deg, transparent 1px, #0049c880 0),
+                linear-gradient(90deg, transparent 1px, #0049c880 0);
+    background-size: 10% 10%;
+    background-repeat: repeat;
 }
 .d_layout_header::before{
     content: '';
     position: absolute;
     inset: 0;
     background: rgba(255,255,255,0);
-    backdrop-filter: blur(5px);
+    /* backdrop-filter: blur(5px); */
     z-index: 0;
 }

@@ -1,8 +1,8 @@
 /*
  * @Author: wangkun
  * @Date: 2022-09-01 10:16:14
- * @LastEditTime: 2022-09-02 16:18:11
- * @LastEditors: wangkun
+ * @LastEditTime: 2022-09-19 14:23:35
+ * @LastEditors: faelssim
  * @Description: 
  */
 import Link from 'next/link'
@@ -29,7 +29,7 @@ export default function Timeline ({ data }) {
             }
             <li 
                 className='flex justify-center items-center text-xs text-gray-400' 
-                style={{ fontFamily: 'Laila', marginLeft: '10px' }}
+                style={{ fontFamily: 'Laila', margin: '20px 0' }}
             >
                 Powered by NEXT.JS
             </li>
