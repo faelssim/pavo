@@ -1,8 +1,8 @@
 /*
  * @Author: wangkun
  * @Date: 2022-09-02 17:22:09
- * @LastEditTime: 2022-09-09 14:42:39
- * @LastEditors: wangkun
+ * @LastEditTime: 2022-10-11 13:48:06
+ * @LastEditors: faelssim
  * @Description: 
  */
 import Link from 'next/link'
@@ -29,9 +29,14 @@ export default function About () {
                 className={ styles.d_img }
                 src="https://s-bj-4351-lyra.oss.dogecdn.com/5c661e149753a9f7783abf9717b53c35.jpeg"
             />
-            <div className='py-10'>
+            <div className='pt-10'>
+                <Link href="/history">
+                    <a>历史上的今天</a>
+                </Link>
+            </div>
+            <div className='pt-5'>
                 <Link href="/recipe">
-                    <a>跟我学做菜吧</a>
+                    <a>每日一文</a>
                 </Link>
             </div>
         </div>

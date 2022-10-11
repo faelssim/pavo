@@ -23,7 +23,7 @@ export default function Timeline ({ data }) {
                         >
                             <a className="cursor-pointer text-blue-900 text-sm">{ title }</a>
                         </Link>
-                        <span className="text-gray-600 font-light text-xs" style={{ fontFamily: 'Space Mono' }}>{ date }</span>
+                        <span className="text-gray-600 font-light text-xs flex-shrink-0" style={{ fontFamily: 'Space Mono' }}>{ date }</span>
                     </li>
                 ))
             }

@@ -1,0 +1,32 @@
+.page {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden auto;
+    position: relative;
+}
+.history-ul li{
+    font-size: 14px;
+    box-sizing: border-box;
+    padding: 5px 10px 5px 100px;
+    position: relative;
+    color: #fff;
+}
+.history-ul li:nth-child(odd){
+    background: rgb(230,87,18);
+}
+.history-ul li:nth-child(even){
+    background: rgb(244,208,0);
+}
+.history-ul li::before{
+    content: attr(data-date);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 100px;
+    color: #dcdcdc;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Nova Mono;
+}
